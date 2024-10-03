@@ -16,10 +16,10 @@ This Python script is designed to merge JSON translation files from two folders 
 
 ## Installation
 1. Clone this repo to your local machine:
-   ```bash
+```bash
   git clone https://github.com/LucPeters1/json-translations-merger.git
   cd json-translations-merger
-    ```
+```
     
 ## Folder Structure
 
