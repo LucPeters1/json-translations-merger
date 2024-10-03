@@ -1,0 +1,1 @@
+# json-translations-merger
