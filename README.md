@@ -53,14 +53,14 @@ The script offers several functionalities, from merging translation files to che
 
 ## Basic Merge example
 ```bash
-  python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output
+python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output
 ```
 
 ## Find untranslated keys
 To find keys that exist in the `current_translations` but are missing in `updated_translations`:
 
 ```bash
-  python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output
+python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output
 ```
 
 This generates a report `untranslated_keys_report.txt` in the `output` folder, listing the missing keys per file.
@@ -69,18 +69,18 @@ This generates a report `untranslated_keys_report.txt` in the `output` folder, l
 To group missing keys across multiple files, showing which translation files are missing which keys:
 
 ```bash
-  python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output
+python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output
 ```
 
 ## Check Difference Between Files
 To check for missing keys between `current_translations` and the `output` files:
 ```bash
-  python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output --checkdiff
+python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output --checkdiff
 ```
 This will output a `missing_keys_report.txt` with all missing keys between the `current_translations` and `output` files.
 
 ## Cross-Check Missing Keys Across All Files
 To cross-check keys across all output translation files (e.g., check if `en.json`, `fr.json`, etc. have missing keys):
 ```bash
-  python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output --crosscheck
+python3 translation_merger.py --current_translations /path/to/current_translations --updated_translations /path/to/updated_translations --output /path/to/output --crosscheck
 ```
