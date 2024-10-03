@@ -24,7 +24,7 @@ This Python script is designed to merge JSON translation files from two folders 
 ## Folder Structure
 
 ```bash
-Translations/
+json-translations-merger/
 ├── current_translations/        # Current translations with existing keys
 │   ├── en.json
 │   ├── fr.json
